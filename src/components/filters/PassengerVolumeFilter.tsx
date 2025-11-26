@@ -2,7 +2,7 @@ import { type IFilters, type PassengerVolume } from "@/types";
 import BaseFilter from "./BaseFilter";
 
 
-function PassengerVolumeFilter({filters, setFilters}: {filters: IFilters, setFilters: (value: IFilters) => void}) {
+function PassengerVolumeFilter({filters, setFilters, className=""}: {filters: IFilters, setFilters: (value: IFilters) => void, className?: string}) {
   const passengerVolumes: PassengerVolume[] = [
     "Medium",
     "Large",
@@ -15,6 +15,7 @@ function PassengerVolumeFilter({filters, setFilters}: {filters: IFilters, setFil
       setSelectedValue={(value) => setFilters({...filters, passengerVolume: value})}
       options={passengerVolumes}
       label="Passenger Volume"
+      className={className}
     />
   )
 }
