@@ -1,10 +1,7 @@
-import '../assets/DataTable.css'
-import airportsInfo from '../data/airports-info.json'
+import '@/assets/DataTable.css'
+import type { IAirport } from '@/types'
 
-function DataTable() {
-
-  const airports = Object.values(airportsInfo)
-
+function DataTable({airports}:{airports: IAirport[]}) {
   const tableHeaders: string[] = [" ", "Code", "Airport Name", "City", "Country", "More Details"]
 
   return (
