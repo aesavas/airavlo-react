@@ -5,6 +5,13 @@ import TypeFilter from '@/components/filters/TypeFilter'
 import type { IFilters } from '@/types'
 import { useState } from 'react'
 
+
+/**
+ * Data filters component
+ * @param filters - The filters to apply
+ * @param setFilters - The function to set the filters
+ * @returns The data filters component
+ */
 function DataFilters({filters, setFilters}: {filters: IFilters, setFilters: (value: IFilters) => void}) {
   const [showMoreFilters, setShowMoreFilters] = useState(false)
 

@@ -1,5 +1,11 @@
+/**
+ * Coordinate interface
+ */
 type Coordinate = {lat: number, lng: number}
 
+/**
+ * Continent types
+ */
 export type Continent =
   | "Africa"
   | "Antarctica"
@@ -9,6 +15,9 @@ export type Continent =
   | "Oceania"
   | "South America";
 
+/**
+ * Airport interface
+ */
 export interface IAirport {
   code: string
   name: string
@@ -24,6 +33,9 @@ export interface IAirport {
   website: string
 }
 
+/**
+ * Country interface
+ */
 export interface ICountry {
   name: string
   countryCode: string
@@ -31,10 +43,19 @@ export interface ICountry {
   flag: string
 }
 
+/**
+ * Types enum
+ */
 export type Types = "Domestic" | "International"
 
+/**
+ * Passenger volume enum
+ */
 export type PassengerVolume = "Medium" | "Large" | "Major Hub"
 
+/**
+ * Sort option interface
+ */
 export interface ISortOption {
   id: number
   menuText: string
@@ -42,6 +63,9 @@ export interface ISortOption {
   direction: "asc" | "desc"
 }
 
+/**
+ * Filters interface
+ */
 export interface IFilters {
   continent: string
   country: string

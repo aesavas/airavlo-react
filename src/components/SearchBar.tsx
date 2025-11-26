@@ -1,4 +1,9 @@
-
+/**
+ * Search bar component
+ * @param searchQuery - The search query
+ * @param setSearchQuery - The function to set the search query
+ * @returns The search bar component
+ */
 function SearchBar({searchQuery, setSearchQuery}: {searchQuery: string, setSearchQuery: (query: string) => void}) {
   return (
     <div className="row mb-3">

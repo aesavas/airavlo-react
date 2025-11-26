@@ -1,3 +1,7 @@
+/**
+ * Navigation bar component
+ * @returns The navigation bar component
+ */
 function NavBar() {
   return <nav
     className="navbar bg-dark border-bottom border-body"

@@ -1,6 +1,13 @@
 import countryInfo from '@/data/countries.json'
 import type { ICountry, IFilters } from '@/types'
 
+/**
+ * Country filter component
+ * @param filters - The filters to apply
+ * @param setFilters - The function to set the filters
+ * @param className - The class name for the filter
+ * @returns The country filter component
+ */
 function CountryFilter({filters, setFilters, className=""}: {filters: IFilters, setFilters: (value: IFilters) => void, className?: string}) {
   const countries: ICountry[] = countryInfo
 

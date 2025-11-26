@@ -1,5 +1,11 @@
 import type { ISortOption } from "@/types"
 
+/**
+ * Sorting dropdown component
+ * @param activeSort - The active sort option
+ * @param setActiveSort - The function to set the active sort option
+ * @returns The sorting dropdown component
+ */
 function SortingDropdown({activeSort, setActiveSort}: {activeSort: ISortOption, setActiveSort: (value: ISortOption) => void}) {
   const sortOptions: ISortOption[] = [
     { id: 1, menuText: "Code (A-Z)", column: "code", direction: "asc" },
