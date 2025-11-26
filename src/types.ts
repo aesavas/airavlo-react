@@ -41,3 +41,10 @@ export interface ISortOption {
   column: string
   direction: "asc" | "desc"
 }
+
+export interface IFilters {
+  continent: string
+  country: string
+  passengerVolume: string
+  type: string
+}
